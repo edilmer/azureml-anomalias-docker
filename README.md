@@ -53,9 +53,8 @@ Abre el navegador en **http://localhost:5001**
    - `Hourly_Date`, `VolCorrected` (o `VolUnCorrected`) y las **features** usadas por el endpoint:  
      `VolUnCorrected, Pressure, Temperature, MaxPressure, MinPressure, MaxFlow, MinFlow, MaxTemp, MinTemp, VolCorrected_lag1, VolCorrected_lag2, VolCorrected_lag24, VolCorrected_rollmean3, VolCorrected_rollmean6, VolCorrected_rollmean24`.
 2. (Opcional) Escribe la **etiqueta de sitio** (ej. `103`).
-3. (Opcional) Filtra por **rango de fechas** (Desde/Hasta).
-4. Presiona **Procesar y graficar**.
-5. Descarga las anomalías detectadas en **Excel** o **PDF** con los botones.
+3. Presiona **Procesar y graficar**.
+4. Descarga las anomalías detectadas en **Excel** o **PDF** con los botones.
 
 ---
 
@@ -92,9 +91,9 @@ docker run --name anomaly-app -p 5001:5000 anomaly-detection-app
 
 ---
 
-# 📚 Desarrollo del proyecto (entregables)
+# 📚 Desarrollo del proyecto
 
-A continuación, la guía para documentar y presentar la solución, siguiendo tu temario.
+A continuación, la guía para documentar y presentar la solución,
 
 ## 1. Análisis de los requerimientos
 
@@ -138,7 +137,7 @@ https://docs.microsoft.com/es-es/azure/machine-learning/component-reference/comp
 5. **Despliegue** a **Managed Online Endpoint** (Aci/Managed).
 6. **Monitoreo**: Application Insights + Data Drift Monitor.
 7. **Re-entrenamiento** (schedule semanal/mensual) con **Pipelines**.
-8. **Governance**: Responsible AI (opcional), versionado y *audit trail*.
+
 
 ### d) Cálculo aproximado de costos
 Usa la calculadora: https://azure.microsoft.com/es-es/pricing/calculator/
@@ -189,7 +188,6 @@ Usa la calculadora: https://azure.microsoft.com/es-es/pricing/calculator/
 - **Pipelines & Components**: pasos reproducibles (prep, train, eval).
 - **Model Registry**: versionado de modelos.
 - **Managed Online Endpoint**: inferencia REST gestionada.
-- **App Insights/Log Analytics**: telemetría y monitoreo.
 - **Web App Docker**: interfaz de usuario para subir archivos, filtrar, graficar y exportar.
 
 ---
@@ -220,10 +218,9 @@ Usa la calculadora: https://azure.microsoft.com/es-es/pricing/calculator/
 
 Estructura sugerida:
 1. **Contexto y requerimientos** (3–4 min): empresa, problema, KPIs, restricciones.
-2. **Diseño y arquitectura** (4–5 min): diagrama, componentes, flujo y gobierno.
+2. **Diseño y arquitectura** (4–5 min): diagrama, componentes, flujo etc.
 3. **Demo** (6–7 min):  
    - Datos de prueba → app web  
-   - Filtrado por sitio/fechas  
    - Gráficas (completa + zoom)  
    - Exportación Excel/PDF  
    - Monitoreo y futuras alertas
