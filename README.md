@@ -45,7 +45,7 @@ docker run --name anomaly-app -p 5001:5000   -e AML_ENDPOINT="https://anomalias-
 ```powershell
 docker run --name anomaly-app -p 5001:5000 `
 ```
-
+Via internet red publica: http://20.80.234.75/
 Abre el navegador en **http://localhost:5001**
 
 ### 4) Uso de la app
